@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marchat - Terminal Chat Client</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="modern">
+  <div class="app-container">
+    <!-- Sidebar: User List -->
+    <aside id="sidebar" class="sidebar" aria-label="User list">
+      <div class="sidebar-header">
+        <div class="server-info">marchat Server</div>
+        <div class="connection-status">
+          <div class="status-indicator" id="statusIndicator"></div>
+          <span id="connectionStatus">Disconnected</span>
+        </div>
+        <button id="closeSidebar" class="close-sidebar" aria-label="Close sidebar">✕</button>
+      </div>
+      <div class="user-list">
+        <div class="user-list-title">Online Users</div>
+        <div id="userList"></div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <button id="openSidebar" class="open-sidebar" aria-label="Open sidebar">☰</button>
+      <div class="chat-header">
+        <div class="chat-title"># general</div>
+        <div class="server-config">
+          <input type="text" id="serverInput" class="server-input" placeholder="ws://localhost:8080/ws" value="ws://localhost:8080/ws">
+          <button id="connectBtn" class="connect-btn">Connect</button>
+        </div>
+      </div>
+      <div class="messages-container" id="messagesContainer" role="log" aria-live="polite"></div>
+      <div class="message-input-container">
+        <input type="file" id="fileUpload" hidden aria-label="Upload file">
+        <label for="fileUpload" class="file-upload">📎</label>
+        <textarea id="messageInput" class="message-input" placeholder="Type a message or command (:help)" rows="1"></textarea>
+        <button id="sendBtn" class="send-btn">Send</button>
+      </div>
+      <div id="adminControls" class="admin-controls" hidden>
+        <select id="adminCommand" aria-label="Admin command">
+          <option value="">Select Admin Command</option>
+          <option value="kick">Kick User</option>
+          <option value="ban">Ban User</option>
+          <option value="unban">Unban User</option>
+          <option value="cleardb">Clear Database</option>
+        </select>
+        <input type="text" id="adminArgs" placeholder="Arguments (e.g., username)" aria-label="Admin command arguments">
+        <button id="adminBtn">Execute</button>
+      </div>
+      <footer id="statusBar" class="status-bar" role="status" aria-live="polite"></footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
