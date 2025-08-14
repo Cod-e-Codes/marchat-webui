@@ -18,7 +18,7 @@ This GUI is **not part of the official marchat codebase** and does **not** repre
 * Connect to a marchat WebSocket server
 * Show online users and connection status
 * Send and receive chat messages and commands
-* Responsive dark-themed UI
+* Responsive UI
 * Minimal footprint (approx. 17 KB)
 
 ---
