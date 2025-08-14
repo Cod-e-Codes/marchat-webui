@@ -6,10 +6,10 @@ A standalone web-based graphical user interface prototype built in plain HTML, C
 
 ## Overview
 
-This project is an experimental mockup of a graphical chat client UI for marchat. It provides a lightweight, responsive interface for users who are not comfortable with the terminal. The UI demonstrates that marchat can support custom frontends while keeping the core server minimal and terminal-focused.
+This project is an experimental proof-of-concept of a graphical chat client UI for marchat. It provides a lightweight, responsive interface for users who are not comfortable with the terminal. The UI demonstrates that marchat can support custom frontends while keeping the core server minimal and terminal-focused.
 
 **Important:**
-This GUI is **not part of the official marchat codebase** and does **not** represent an official or planned release. It is provided solely for testing and exploration purposes and may never be integrated or maintained as part of marchat.
+This GUI is **not part of the official marchat codebase** and does **not** represent an official or planned release. It is provided solely for private testing, experimentation, or internal use and may never be integrated or maintained as part of marchat.
 
 ---
 
@@ -45,13 +45,31 @@ This GUI is **not part of the official marchat codebase** and does **not** repre
 
 ## Purpose
 
-This web UI is intended to demonstrate how a graphical client can interface with marchat. It allows developers and teams to provide access to users who prefer graphical interfaces while preserving the lightweight, terminal-focused design of the core server.
+This web UI is a minimal proof-of-concept demonstrating that a graphical client can interface with marchat. It allows teams and developers to include non-terminal users in private/self-hosted environments or experiment with custom frontends, while preserving the lightweight, terminal-focused design of the core server.
+
+Even as a demo, it extends marchat's usability beyond terminal users, making self-hosted servers more accessible to collaborators and small teams.
+
+---
+
+## Limitations Note
+
+While this demo does not support advanced features, if you are interested in extending the web UI or creating a custom frontend, feel free to reach out via discussions or email at [cod.e.codes.dev@gmail.com](mailto:cod.e.codes.dev@gmail.com).
+
+---
+
+## Limitations
+
+* No TLS or authentication beyond username.
+* Limited feature set: no admin commands, plugins, or E2EE.
+* Designed only for private/self-hosted experimentation.
+* Not actively maintained.
+* Feature parity with the TUI client is not guaranteed.
 
 ---
 
 ## Disclaimer
 
-* This project is a proof of concept and is not actively maintained.
+* This project is intended only for private or experimental use.
 * Functionality depends on a compatible marchat server.
 * No official support or warranty is provided.
 
