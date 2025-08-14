@@ -25,7 +25,8 @@ This GUI is **not part of the official marchat codebase** and does **not** repre
 ## Usage
 
 Open `index.html` in a modern web browser.  
-Enter your marchat server WebSocket URL (e.g. `ws://localhost:8080/ws`) and click **Connect**.  
+Enter your marchat server WebSocket URL (e.g. `ws://localhost:8080/ws`) and click **Connect**.
+Enter your username.
 Type messages or commands (starting with `:`) in the input box.
 
 ---
